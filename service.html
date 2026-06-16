@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Услуги | Берлога</title>
+  <meta name="description" content="Услуги строительной компании Берлога">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">Берлога</a>
+    <nav class="nav">
+      <a href="projects.html">Проекты</a>
+      <div class="dropdown">
+        <a href="#">Услуги</a>
+        <div class="dropdown-menu">
+          <a href="service.html?id=doma">Строительство домов</a>
+          <a href="service.html?id=bani">Строительство бань</a>
+          <a href="service.html?id=proektirovanie">Проектирование</a>
+          <a href="service.html?id=dop-uslugi">Дополнительные услуги</a>
+        </div>
+      </div>
+      <a href="about.html">О нас</a>
+      <a href="contacts.html">Контакты</a>
+      <div class="nav-right">
+        <a href="tel:+79991234567" class="phone-link" data-phone>+7 (999) 123-45-67</a>
+        <a href="#calculator" class="btn btn-solid btn-sm">Рассчитать стоимость</a>
+      </div>
+    </nav>
+    <button class="burger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="service-container">
+
+  <div class="service-hero" id="service-hero-block">
+    <div style="max-width:1200px;margin:0 auto;text-align:center;">
+      <h1 id="service-title-hero" style="font-size:2rem;font-weight:700;margin-bottom:12px;letter-spacing:0.04em;"></h1>
+      <p id="service-desc-hero" style="color:var(--gray);max-width:600px;margin:0 auto 24px;"></p>
+      <a href="#calculator" class="btn btn-solid">Рассчитать стоимость</a>
+    </div>
+  </div>
+
+  <div style="max-width:1200px;margin:0 auto;padding:40px 20px;">
+    <div class="service-content">
+      <div>
+        <p id="service-text" style="margin-bottom:16px;"></p>
+        <p id="service-price" style="font-weight:600;"></p>
+      </div>
+      <div>
+        <img id="service-image" src="" alt="" style="width:100%;border-radius:8px;border:1px solid var(--border);">
+      </div>
+    </div>
+  </div>
+
+  <section class="section" style="background:var(--white);">
+    <h2 class="section-title">Преимущества</h2>
+    <div class="advantages-grid" id="service-advantages"></div>
+  </section>
+
+  <section class="section" id="service-projects-section" style="display:none;">
+    <h2 class="section-title">Наши проекты</h2>
+    <p class="section-subtitle">Посмотрите примеры наших работ по этой услуге</p>
+    <div class="card-grid" id="service-projects-grid"></div>
+    <div style="text-align:center;margin-top:32px;">
+      <a href="projects.html" class="btn btn-outline">Все проекты</a>
+    </div>
+  </section>
+
+  <section class="section" id="calculator" style="background:var(--white);">
+    <h2 class="section-title">Рассчитайте стоимость</h2>
+    <div class="calculator">
+      <form id="calc-form">
+        <div class="calc-row">
+          <label for="calc-service">Тип строения</label>
+          <select id="calc-service">
+            <option value="">Выберите тип</option>
+          </select>
+        </div>
+        <div class="calc-row">
+          <label for="calc-area">Площадь, м²</label>
+          <input type="number" id="calc-area" placeholder="Введите площадь" min="1">
+        </div>
+        <button type="submit" class="btn btn-solid calc-btn" style="width:100%;">Рассчитать</button>
+        <div id="calc-error" class="calc-error"></div>
+        <div id="calc-result" class="calc-result" style="display:none;">
+          <p style="margin-bottom:4px;font-size:0.9rem;color:var(--gray);">Ориентировочная стоимость:</p>
+          <div class="price" id="calc-price">0 ₽</div>
+          <a href="contacts.html" class="btn btn-outline" style="margin-top:16px;">Оставить заявку на точный расчёт</a>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Оставить заявку</h2>
+    <div style="max-width:600px;margin:0 auto;">
+      <form>
+        <div class="form-group">
+          <label for="service-name">Имя</label>
+          <input type="text" id="service-name" placeholder="Ваше имя">
+        </div>
+        <div class="form-group">
+          <label for="service-phone">Телефон</label>
+          <input type="tel" id="service-phone" placeholder="+7 (999) 123-45-67">
+        </div>
+        <div class="form-group">
+          <label for="service-msg">Сообщение</label>
+          <textarea id="service-msg" placeholder="Ваше сообщение"></textarea>
+        </div>
+        <button type="submit" class="btn btn-solid" style="width:100%;">Отправить</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <h3 data-company>Берлога</h3>
+      <p style="color:#B8CBB8;font-size:0.85rem;">Строим дома и бани из сосны и кедра по всей России. Под ключ, от проекта до ввода в эксплуатацию.</p>
+    </div>
+    <div>
+      <h3>Навигация</h3>
+      <div class="footer-nav">
+        <a href="projects.html">Проекты</a>
+        <a href="service.html?id=doma">Строительство домов</a>
+        <a href="service.html?id=bani">Строительство бань</a>
+        <a href="service.html?id=proektirovanie">Проектирование</a>
+        <a href="about.html">О нас</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+    </div>
+    <div class="footer-contacts">
+      <h3>Контакты</h3>
+      <p data-phone>+7 (999) 123-45-67</p>
+      <p data-email>info@berlogadom.ru</p>
+      <p data-address>г. Москва, ул. Лесная, д. 1</p>
+      <div style="display:flex;gap:8px;margin-top:12px;">
+        <a href="#" class="social-vk" style="color:#B8CBB8;">VK</a>
+        <a href="#" class="social-tg" style="color:#B8CBB8;">Telegram</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2025 Берлога. Все права защищены. <a href="#" style="color:#6A8A78;text-decoration:underline;">Политика конфиденциальности</a>
+  </div>
+</footer>
+
+<script src="js/common.js"></script>
+<script src="js/calculator.js"></script>
+<script src="js/service.js"></script>
+</body>
+</html>
