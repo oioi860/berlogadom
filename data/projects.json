@@ -1,98 +1,98 @@
 [
   {
     "id": 1,
-    "name": "Дом в Сосновом Бору",
+    "name": "Дом Флагман",
     "type": "doma",
-    "area": 120,
-    "price": 5400000,
-    "image": "https://placehold.co/600x400/cccccc/666666?text=Проект+1",
+    "area": 390,
+    "price": 12797460,
+    "image": "assets/images/flagman.jpg",
     "gallery": [
-      "https://placehold.co/600x400/cccccc/666666?text=Фото+1",
-      "https://placehold.co/600x400/cccccc/666666?text=Фото+2",
-      "https://placehold.co/600x400/cccccc/666666?text=Фото+3"
+      "assets/images/flagman.jpg",
+      "assets/images/flagman_1.jpg"
     ],
-    "description": "Красивый дом из кедра с террасой и панорамными окнами. Построен по индивидуальному проекту.",
+    "description": "Дом из бревна диаметром 450–700 мм, обработка под скобель. Двухэтажный, 2 спальни, терраса 26 м². Стропильная система, кровля металлопрофиль.",
     "serviceId": "doma",
-    "material": "Кедр",
-    "timeline": "4 месяца"
+    "material": "Сосна",
+    "timeline": "6–8 месяцев"
   },
   {
     "id": 2,
-    "name": "Баня в русском стиле",
-    "type": "bani",
-    "area": 60,
-    "price": 2100000,
-    "image": "https://placehold.co/600x400/cccccc/666666?text=Проект+2",
-    "gallery": [
-      "https://placehold.co/600x400/cccccc/666666?text=Фото+1",
-      "https://placehold.co/600x400/cccccc/666666?text=Фото+2"
-    ],
-    "description": "Классическая русская баня из сосны с парной и комнатой отдыха.",
-    "serviceId": "bani",
-    "material": "Сосна",
-    "timeline": "2 месяца"
-  },
-  {
-    "id": 3,
-    "name": "Дом с мансардой",
+    "name": "Дом Монтана",
     "type": "doma",
-    "area": 150,
-    "price": 6750000,
-    "image": "https://placehold.co/600x400/cccccc/666666?text=Проект+3",
+    "area": 352,
+    "price": 11550528,
+    "image": "assets/images/montana.jpg",
     "gallery": [
-      "https://placehold.co/600x400/cccccc/666666?text=Фото+1",
-      "https://placehold.co/600x400/cccccc/666666?text=Фото+2",
-      "https://placehold.co/600x400/cccccc/666666?text=Фото+3"
+      "assets/images/montana.jpg",
+      "assets/images/montana_1.jpg"
     ],
-    "description": "Дом с мансардой из сосны. Большая терраса и второй свет в гостиной.",
-    "serviceId": "doma",
-    "material": "Сосна",
-    "timeline": "5 месяцев"
-  },
-  {
-    "id": 4,
-    "name": "Баня с бассейном",
-    "type": "bani",
-    "area": 80,
-    "price": 2800000,
-    "image": "https://placehold.co/600x400/cccccc/666666?text=Проект+4",
-    "gallery": [
-      "https://placehold.co/600x400/cccccc/666666?text=Фото+1"
-    ],
-    "description": "Баня из кедра с бассейном. Комплекс для полноценного отдыха.",
-    "serviceId": "bani",
-    "material": "Кедр",
-    "timeline": "3 месяца"
-  },
-  {
-    "id": 5,
-    "name": "Дом с гаражом",
-    "type": "doma",
-    "area": 180,
-    "price": 8100000,
-    "image": "https://placehold.co/600x400/cccccc/666666?text=Проект+5",
-    "gallery": [
-      "https://placehold.co/600x400/cccccc/666666?text=Фото+1",
-      "https://placehold.co/600x400/cccccc/666666?text=Фото+2"
-    ],
-    "description": "Дом из сосны с пристроенным гаражом. Проект с учётом всех пожеланий.",
+    "description": "Двухэтажный дом, 2 спальни, терраса 38 м². Бревно 450–650 мм, обработка под скобель.",
     "serviceId": "doma",
     "material": "Сосна",
     "timeline": "6 месяцев"
   },
   {
-    "id": 6,
-    "name": "Баня-бочка",
-    "type": "bani",
-    "area": 40,
-    "price": 1400000,
-    "image": "https://placehold.co/600x400/cccccc/666666?text=Проект+6",
+    "id": 3,
+    "name": "Дом Берлога",
+    "type": "doma",
+    "area": 105,
+    "price": 3025470,
+    "image": "assets/images/berloga_home.jpg",
     "gallery": [
-      "https://placehold.co/600x400/cccccc/666666?text=Фото+1"
+      "assets/images/berloga_home.jpg",
+      "assets/images/berloga_home_1.jpg"
     ],
-    "description": "Компактная баня-бочка из кедра. Быстрая сборка и минимальные сроки.",
+    "description": "Одноэтажный дом, 2 спальни, терраса 25 м². Бревно 420–550 мм, под скобель или рубанок. Отличный вариант для небольшой семьи.",
+    "serviceId": "doma",
+    "material": "Сосна",
+    "timeline": "4 месяца"
+  },
+  {
+    "id": 4,
+    "name": "Баня Гармония",
+    "type": "bani",
+    "area": 172,
+    "price": 3908250,
+    "image": "assets/images/bania_garmonia.jpg",
+    "gallery": [
+      "assets/images/bania_garmonia.jpg",
+      "assets/images/bania_garmonia_1.jpg"
+    ],
+    "description": "Банный комплекс с террасой 83 м², одноэтажный. Бревно 350–400 мм. Полный набор: парная, комнаты отдыха.",
     "serviceId": "bani",
-    "material": "Кедр",
-    "timeline": "1.5 месяца"
+    "material": "Сосна",
+    "timeline": "3 месяца"
+  },
+  {
+    "id": 5,
+    "name": "Медвежья Баня",
+    "type": "bani",
+    "area": 44.2,
+    "price": 1317778,
+    "image": "assets/images/medvezhya_bania.jpg",
+    "gallery": [
+      "assets/images/medvezhya_bania.jpg",
+      "assets/images/medvezhya_bania_1.jpg"
+    ],
+    "description": "Компактная баня, 1 этаж, терраса 12 м². Бревно 380–450 мм, обработка под скобель. Идеально для дачного участка.",
+    "serviceId": "bani",
+    "material": "Сосна",
+    "timeline": "2 месяца"
+  },
+  {
+    "id": 6,
+    "name": "Гостевой дом 14",
+    "type": "doma",
+    "area": 77.5,
+    "price": 2012400,
+    "image": "assets/images/gostevoy_14.jpg",
+    "gallery": [
+      "assets/images/gostevoy_14.jpg",
+      "assets/images/gostevoy_14_1.jpg"
+    ],
+    "description": "Двухэтажный гостевой дом, 2 спальни, терраса 18 м². Бревно 260–280 мм. Отличное решение для приёма гостей.",
+    "serviceId": "doma",
+    "material": "Сосна",
+    "timeline": "3 месяца"
   }
 ]
