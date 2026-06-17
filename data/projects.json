@@ -8,7 +8,11 @@
     "image": "assets/images/flagman.jpg",
     "gallery": [
       "assets/images/flagman.jpg",
-      "assets/images/flagman_1.jpg"
+      "assets/images/flagman_1.jpg",
+      "assets/images/flagman_2.jpg",
+      "assets/images/flagman_3.jpg",
+      "assets/images/flagman_4.jpg",
+      "assets/images/flagman_5.jpg"
     ],
     "description": "Дом из бревна диаметром 450–700 мм, обработка под скобель. Двухэтажный, 2 спальни, терраса 26 м². Стропильная система, кровля металлопрофиль.",
     "serviceId": "doma",
@@ -24,7 +28,14 @@
     "image": "assets/images/montana.jpg",
     "gallery": [
       "assets/images/montana.jpg",
-      "assets/images/montana_1.jpg"
+      "assets/images/montana_1.jpg",
+      "assets/images/montana_2.jpg",
+      "assets/images/montana_3.jpg",
+      "assets/images/montana_4.jpg",
+      "assets/images/montana_5.jpg",
+      "assets/images/montana_6.jpg",
+      "assets/images/montana_7.jpg",
+      "assets/images/montana_8.jpg"
     ],
     "description": "Двухэтажный дом, 2 спальни, терраса 38 м². Бревно 450–650 мм, обработка под скобель.",
     "serviceId": "doma",
@@ -40,7 +51,8 @@
     "image": "assets/images/berloga_home.jpg",
     "gallery": [
       "assets/images/berloga_home.jpg",
-      "assets/images/berloga_home_1.jpg"
+      "assets/images/berloga_home_1.jpg",
+      "assets/images/berloga_home_2.jpg"
     ],
     "description": "Одноэтажный дом, 2 спальни, терраса 25 м². Бревно 420–550 мм, под скобель или рубанок. Отличный вариант для небольшой семьи.",
     "serviceId": "doma",
@@ -56,7 +68,8 @@
     "image": "assets/images/bania_garmonia.jpg",
     "gallery": [
       "assets/images/bania_garmonia.jpg",
-      "assets/images/bania_garmonia_1.jpg"
+      "assets/images/bania_garmonia_1.jpg",
+      "assets/images/bania_garmonia_2.jpg"
     ],
     "description": "Банный комплекс с террасой 83 м², одноэтажный. Бревно 350–400 мм. Полный набор: парная, комнаты отдыха.",
     "serviceId": "bani",
@@ -72,7 +85,8 @@
     "image": "assets/images/medvezhya_bania.jpg",
     "gallery": [
       "assets/images/medvezhya_bania.jpg",
-      "assets/images/medvezhya_bania_1.jpg"
+      "assets/images/medvezhya_bania_1.jpg",
+      "assets/images/medvezhya_bania_3.jpg"
     ],
     "description": "Компактная баня, 1 этаж, терраса 12 м². Бревно 380–450 мм, обработка под скобель. Идеально для дачного участка.",
     "serviceId": "bani",
@@ -88,7 +102,10 @@
     "image": "assets/images/gostevoy_14.jpg",
     "gallery": [
       "assets/images/gostevoy_14.jpg",
-      "assets/images/gostevoy_14_1.jpg"
+      "assets/images/gostevoy_14_1.jpg",
+      "assets/images/gostevoy_14_3.jpg",
+      "assets/images/gostevoy_14_4.jpg",
+      "assets/images/gostevoy_14_5.jpg"
     ],
     "description": "Двухэтажный гостевой дом, 2 спальни, терраса 18 м². Бревно 260–280 мм. Отличное решение для приёма гостей.",
     "serviceId": "doma",
