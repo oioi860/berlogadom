@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="page-title">Проект | Берлога</title>
-  <meta name="description" content="Детальная страница проекта">
+  <title>Наши услуги | Берлога</title>
+  <meta name="description" content="Услуги строительной компании Берлога — строительство домов и бань из бревна, проектирование, отделка">
   <link rel="icon" href="assets/images/favicon.png" type="image/png">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/style.css">
@@ -34,43 +34,11 @@
   </div>
 </header>
 
-<main id="project-content">
+<main>
   <section class="section fade-in-up">
-    <h1 class="section-title fade-in-left" id="project-title"></h1>
-  </section>
-
-  <section class="section fade-in-up" style="padding-top:0;">
-    <div class="slider">
-      <div class="slider-track" id="slider-track"></div>
-      <button class="slider-arrow prev" onclick="prevSlide()">‹</button>
-      <button class="slider-arrow next" onclick="nextSlide()">›</button>
-    </div>
-    <div class="slider-dots" id="slider-dots"></div>
-  </section>
-
-  <hr class="ornament">
-
-  <section class="section fade-in-up" style="padding-top:0;">
-    <h2 class="section-title fade-in-left">Характеристики</h2>
-    <div class="specs" id="project-specs"></div>
-  </section>
-
-  <hr class="ornament">
-
-  <section class="section section-white fade-in-up" style="padding-top:0;">
-    <div style="max-width:800px;margin:0 auto;text-align:center;">
-      <h2 class="section-title">Описание</h2>
-      <p id="project-description" style="color:var(--text-secondary);margin-top:16px;"></p>
-      <div style="margin-top:24px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-        <a href="index.html#calculator" class="btn btn-gold">Рассчитать такой же</a>
-        <a href="index.html#feedback" class="btn btn-outline">Оставить заявку</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section fade-in-up" id="similar-section" style="display:none;">
-    <h2 class="section-title fade-in-left">Похожие проекты</h2>
-    <div class="card-grid" id="similar-grid"></div>
+    <h1 class="section-title fade-in-left">Наши услуги</h1>
+    <p class="section-subtitle">Полный спектр работ по деревянному домостроению</p>
+    <div class="services-grid" id="services-grid"></div>
   </section>
 </main>
 
@@ -84,6 +52,7 @@
       <h3>Навигация</h3>
       <div class="footer-nav">
         <a href="projects.html">Проекты</a>
+        <a href="services.html">Услуги</a>
         <a href="service.html?id=doma">Строительство домов</a>
         <a href="service.html?id=bani">Строительство бань</a>
         <a href="service.html?id=proektirovanie">Проектирование</a>
@@ -95,7 +64,7 @@
       <h3>Свяжитесь с нами</h3>
       <a href="tel:+79991234567" class="footer-phone" data-phone>+7 (999) 123-45-67</a>
       <p class="footer-email" data-email>info@berlogadom.ru</p>
-      <p class="footer-address" data-address>г. Москва, ул. Лесная, д. 1</p>
+      <p class="footer-address" data-address>г. Брянск, ул. Красноармейская, д. 136-а</p>
       <div class="footer-social">
         <a href="#" class="social-vk">VK</a>
         <a href="#" class="social-tg">Telegram</a>
@@ -111,6 +80,52 @@
 </footer>
 
 <script src="js/common.js"></script>
-<script src="js/project-detail.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var grid = document.getElementById('services-grid');
+  if (!grid) return;
+
+  fetchJSON('data/services.json').then(function (services) {
+    grid.innerHTML = '';
+    services.forEach(function (s) {
+      var imgSrc = 'assets/images/service_' + s.id + '.jpg';
+
+      var card = document.createElement('div');
+      card.className = 'service-card fade-in-up';
+
+      var img = document.createElement('img');
+      img.className = 'service-card-image';
+      img.src = imgSrc;
+      img.alt = s.title;
+      img.loading = 'lazy';
+      img.onerror = function () { this.style.display = 'none'; };
+      card.appendChild(img);
+
+      var body = document.createElement('div');
+      body.className = 'service-card-body';
+
+      var title = document.createElement('h3');
+      title.className = 'service-card-title';
+      title.textContent = s.title;
+      body.appendChild(title);
+
+      var desc = document.createElement('p');
+      desc.className = 'service-card-description';
+      desc.textContent = s.description.length > 100 ? s.description.substring(0, 100) + '…' : s.description;
+      body.appendChild(desc);
+
+      var btn = document.createElement('a');
+      btn.href = 'service.html?id=' + s.id;
+      btn.className = 'btn btn-outline';
+      btn.textContent = 'Подробнее';
+      body.appendChild(btn);
+
+      card.appendChild(body);
+      grid.appendChild(card);
+    });
+    initScrollAnimation();
+  });
+});
+</script>
 </body>
 </html>

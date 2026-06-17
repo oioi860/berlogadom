@@ -1,34 +1,31 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>О компании | Берлога</title>
   <meta name="description" content="О компании Берлога — строительство домов и бань из бревна">
+  <link rel="icon" href="assets/images/favicon.png" type="image/png">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Monomakh&display=swap" rel="stylesheet">
+  <script>document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('img').forEach(function(i){i.setAttribute('draggable','false')})});document.addEventListener('contextmenu',function(e){if(e.target.closest('img,figure,picture,[class*="card-img"],[class*="slider"]')){e.preventDefault();e.stopPropagation();return false}},true);document.querySelectorAll('img,[class*="card-img"]').forEach(function(el){el.addEventListener('contextmenu',function(e){e.preventDefault();return false})});</script>
 </head>
 <body>
 
 <header class="header">
   <div class="header-inner">
-    <a href="index.html" class="logo">Берлога</a>
+    <a href="index.html" class="flex items-center">
+  <img src="assets/images/logo.png" alt="Берлога" class="h-20 w-auto">
+</a>
     <nav class="nav">
       <a href="projects.html">Проекты</a>
-      <div class="dropdown">
-        <a href="#">Услуги</a>
-        <div class="dropdown-menu">
-          <a href="service.html?id=doma">Строительство домов</a>
-          <a href="service.html?id=bani">Строительство бань</a>
-          <a href="service.html?id=proektirovanie">Проектирование</a>
-          <a href="service.html?id=dop-uslugi">Дополнительные услуги</a>
-        </div>
-      </div>
+      <a href="services.html">Услуги</a>
       <a href="about.html">О нас</a>
       <a href="contacts.html">Контакты</a>
       <div class="nav-right">
         <a href="tel:+79991234567" class="phone-link" data-phone>+7 (999) 123-45-67</a>
-        <a href="index.html#calculator" class="btn btn-solid btn-sm">Рассчитать стоимость</a>
+        <a href="index.html#calculator" class="btn btn-gold btn-sm">Рассчитать стоимость</a>
       </div>
     </nav>
     <button class="burger" aria-label="Меню">
@@ -38,127 +35,194 @@
 </header>
 
 <main>
-  <section class="hero">
-    <h1>О компании</h1>
-    <p>Более 10 лет строим дома и бани из сосны и кедра по всей России</p>
-  </section>
-
-  <section class="section">
-    <div class="service-content">
-      <div>
-        <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:16px;letter-spacing:0.04em;">Наша история</h2>
-        <p style="color:var(--gray);margin-bottom:12px;">Компания «Берлога» начала свой путь в 2015 году с малого семейного подряда. Сегодня мы — команда профессионалов, построившая более 100 объектов по всей России.</p>
-        <p style="color:var(--gray);margin-bottom:12px;">Мы специализируемся на строительстве домов и бань из сосны и кедра. Каждый наш проект — это сочетание традиционных технологий и современных решений.</p>
-        <p style="color:var(--gray);">Текст об истории компании…</p>
-      </div>
-      <div>
-        <div style="width:100%;height:300px;background:#E8E2D8;display:flex;align-items:center;justify-content:center;color:var(--gray);border:1px solid var(--border);border-radius:8px;">фото</div>
+  <section class="hero-sub fade-in-up">
+    <div class="hero-sub-bg">
+      <img src="assets/images/hero_bg.jpg" alt="Берлога">
+    </div>
+    <div class="hero-sub-overlay"></div>
+    <div class="hero-sub-content">
+      <div class="hero-sub-label">Русское деревянное зодчество</div>
+      <h1>О компании</h1>
+      <div class="hero-sub-divider"></div>
+      <p>Мы не строим дома — мы создаём наследие. Каждый сруб ручной рубки несёт тепло наших рук и память поколений.</p>
+      <div class="hero-sub-stats">
+        <div>
+          <div class="hero-sub-stat-number">12</div>
+          <div class="hero-sub-stat-label">Лет безупречной работы</div>
+        </div>
+        <div>
+          <div class="hero-sub-stat-number">100+</div>
+          <div class="hero-sub-stat-label">Построенных объектов</div>
+        </div>
+        <div>
+          <div class="hero-sub-stat-number">50+</div>
+          <div class="hero-sub-stat-label">Лет гарантии на сруб</div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section" style="background:var(--white);">
-    <h2 class="section-title">Миссия и ценности</h2>
+  <hr class="ornament">
+
+  <section class="section fade-in-up">
+    <div class="about-premium" style="align-items:start;">
+      <div class="about-premium-content">
+        <div class="about-section-tag">С 2012 года</div>
+        <h2>История мастерской</h2>
+        <p class="about-lead">Начиная с 2012 года наша команда занимается возведением уникальных объектов деревянного домостроения. Мы строим дома и бани из экологически чистого, созданного самой природой материала — дерева.</p>
+        <p class="about-body">В рубленом доме теплее зимой и прохладнее летом по сравнению с кирпичным и бетонным. Бревенчатые дома служат эталоном комфортного для проживания жилища. Загородный деревянный дом — это не только добротное строение, но и уютное место, проживание в котором приносит радость.</p>
+      </div>
+      <div class="about-premium-image">
+        <img src="assets/images/about_team.jpg" alt="Команда Берлога">
+        <div class="about-premium-badge">
+          <span class="about-premium-badge-year">12</span>
+          <span class="about-premium-badge-label">Лет<br>безупречной работы</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-alt fade-in-up" style="padding:64px 20px;">
+    <div class="about-magazine">
+      <div class="about-pull-quote">
+        <p>«Мы не строим дома. Мы создаём наследие для будущих поколений.»</p>
+        <cite>— Основатель мастерской «Берлога»</cite>
+      </div>
+    </div>
+  </section>
+
+  <hr class="ornament">
+
+  <section class="section fade-in-up">
+    <div class="about-magazine">
+      <div class="about-section-tag">01</div>
+      <h2>Наша философия</h2>
+      <p class="about-body">Древесина — единственный стройматериал, который создан природой, а не человеком. Она обладает высокими теплоизоляционными свойствами и способностью накапливать и отдавать влагу, создавая особый микроклимат. В рубленом доме теплее зимой и прохладнее летом по сравнению с кирпичным и бетонным — это эталон комфортного жилища.</p>
+      <p class="about-body">Мы не пытаемся улучшить природу — мы работаем с ней в соавторстве. Каждое бревно, прошедшее через руки нашего мастера, сохраняет свою уникальную текстуру и энергетику. Настоящий дом нельзя собрать из конвейерных деталей — его можно только создать, с вниманием к каждому миллиметру.</p>
+      <div class="gold-divider" style="margin:32px auto;"></div>
+    </div>
+  </section>
+
+  <section class="section section-white fade-in-up">
+    <div class="about-magazine-wide">
+      <div class="about-section-tag" style="text-align:center;">02</div>
+      <h2 class="section-title">Как мы работаем</h2>
+      <p class="section-subtitle">От первого звонка до заселения — три этапа к вашему дому</p>
+      <div class="about-process">
+        <div class="about-process-step">
+          <div class="about-process-num">01</div>
+          <h3>Проект и расчёт</h3>
+          <p>Выезжаем на участок, создаём индивидуальный проект с учётом всех пожеланий, готовим прозрачную смету без скрытых платежей.</p>
+        </div>
+        <div class="about-process-step">
+          <div class="about-process-num">02</div>
+          <h3>Производство и сборка</h3>
+          <p>Ручная рубка сруба на нашей площадке, контроль качества каждого бревна, сборка на вашем участке опытной бригадой мастеров.</p>
+        </div>
+        <div class="about-process-step">
+          <div class="about-process-num">03</div>
+          <h3>Финиш и гарантия</h3>
+          <p>Отделка, кровля, инженерные системы. Сдаём объект под ключ с письменной гарантией до 5 лет на все виды работ.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="ornament">
+
+  <section class="section fade-in-up">
+    <div class="about-magazine-wide">
+      <div class="about-magazine">
+        <div class="about-section-tag">03</div>
+        <h2>Почему ручная рубка</h2>
+        <p class="about-body">Ручной инструмент — топор и скобель — бережно сохраняет верхний плотный слой бревна. Станок срезает эту природную защиту, открывая поры древесины. Влага проникает внутрь, и запускается процесс гниения. Ручная обработка продлевает срок службы сруба в три раза.</p>
+        <p class="about-body">Сруб ручной рубки не требует дополнительной отделки. Сама фактура бревна является финишным покрытием — это и есть премиальный интерьер, который не могут имитировать современные материалы.</p>
+        <div class="about-highlight">
+          <p><strong>Ручная рубка</strong> — не просто технология. Это подход, при котором дом служит не одному поколению, а становится семейным наследием, передающимся по наследству.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-in-up">
+    <div class="about-magazine" style="padding-top:0;">
+      <div class="about-section-tag">04</div>
+      <h2>Что получает клиент</h2>
+      <p class="about-body">Деревянный дом ручной рубки — это не просто строение, защищающее от непогоды и стужи. Это уютное место, проживание в котором приносит радость каждому члену семьи. Впечатляющий внешний вид архитектурного сооружения органично вписывается в природный ландшафт и украшает прилегающую территорию.</p>
+      <p class="about-body">С нами вы можете осуществить свою мечту о собственном доме — тёплом, экологичном, красивом. Доме, который будет радовать вас и ваших близких долгие годы и станет предметом гордости на протяжении всей жизни.</p>
+    </div>
+  </section>
+
+  <hr class="ornament">
+
+  <section class="section section-white fade-in-up">
+    <h2 class="section-title fade-in-left">Миссия и ценности</h2>
     <p class="section-subtitle">Что движет нами в работе</p>
     <div class="advantages-grid">
       <div class="advantage-item">
-        <div class="advantage-icon-svg">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#2C4C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="20,2 6,28 34,28"/>
-            <rect x="18" y="28" width="4" height="10"/>
-          </svg>
-        </div>
+        <div class="advantage-num">01</div>
         <h3>Качество превыше всего</h3>
         <p>Мы не экономим на материалах и не срезаем углы</p>
       </div>
       <div class="advantage-item">
-        <div class="advantage-icon-svg">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#2C4C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="4,16 20,2 36,16"/>
-            <rect x="10" y="16" width="20" height="22"/>
-            <rect x="17" y="26" width="6" height="12"/>
-          </svg>
-        </div>
+        <div class="advantage-num">02</div>
         <h3>Честность с клиентом</h3>
         <p>Прозрачные сметы и чёткие договорённости</p>
       </div>
       <div class="advantage-item">
-        <div class="advantage-icon-svg">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#2C4C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20,4 C20,4 8,16 8,24 C8,30.6 13.4,36 20,36 C26.6,36 32,30.6 32,24 C32,16 20,4 20,4Z"/>
-            <circle cx="20" cy="24" r="4"/>
-          </svg>
-        </div>
+        <div class="advantage-num">03</div>
         <h3>Забота о природе</h3>
         <p>Используем только экологичные материалы</p>
       </div>
       <div class="advantage-item">
-        <div class="advantage-icon-svg">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#2C4C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="20" cy="20" r="15"/>
-            <polygon points="20,4 26,20 20,36 14,20"/>
-            <circle cx="20" cy="20" r="3"/>
-          </svg>
-        </div>
+        <div class="advantage-num">04</div>
         <h3>Постоянное развитие</h3>
         <p>Изучаем новые технологии и улучшаем процессы</p>
       </div>
     </div>
   </section>
 
-  <section class="section">
-    <h2 class="section-title">Наши преимущества</h2>
+  <section class="section section-white fade-in-up">
+    <div class="service-content" style="align-items:center;">
+      <div>
+        <img src="assets/images/about_production.jpg" alt="Процесс строительства" class="about-img">
+      </div>
+      <div>
+        <h2 class="fade-in-left" style="font-size:1.5rem;font-weight:700;margin-bottom:16px;letter-spacing:0.04em;">Производство и технологии</h2>
+        <p style="color:var(--text-secondary);">Мы используем только проверенные технологии рубки и качественные материалы. Каждое бревно проходит ручной отбор, а готовый сруб собирается на нашей производственной площадке перед отправкой заказчику. Это гарантирует точность сборки и долговечность конструкции.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fade-in-up">
+    <h2 class="section-title fade-in-left">Наши преимущества</h2>
     <p class="section-subtitle">Почему клиенты выбирают нас снова и рекомендуют друзьям</p>
     <div class="advantages-grid">
       <div class="advantage-item">
-        <div class="advantage-icon-svg">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#2C4C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="20" cy="20" r="16"/>
-            <polygon points="20,6 24,14 34,14 26,20 30,30 20,24 10,30 14,20 6,14 16,14"/>
-          </svg>
-        </div>
+        <div class="advantage-num">01</div>
         <h3>Опыт &gt;10 лет</h3>
         <p>Более 100 построенных объектов по всей России. Каждый проект — это новый вызов и опыт.</p>
       </div>
       <div class="advantage-item">
-        <div class="advantage-icon-svg">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#2C4C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="8" y="14" width="24" height="22" rx="2"/>
-            <polyline points="6,18 20,8 34,18"/>
-            <circle cx="20" cy="28" r="4"/>
-          </svg>
-        </div>
+        <div class="advantage-num">02</div>
         <h3>Гарантия на все работы</h3>
         <p>Предоставляем письменную гарантию до 5 лет на все виды работ. Ваша уверенность в качестве.</p>
       </div>
       <div class="advantage-item">
-        <div class="advantage-icon-svg">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#2C4C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="6" y="6" width="28" height="28" rx="2"/>
-            <line x1="6" y1="16" x2="34" y2="16"/>
-            <line x1="20" y1="6" x2="20" y2="34"/>
-            <line x1="13" y1="10" x2="13" y2="14"/>
-            <line x1="27" y1="10" x2="27" y2="14"/>
-          </svg>
-        </div>
+        <div class="advantage-num">03</div>
         <h3>Соблюдение сроков</h3>
         <p>Чёткое соблюдение договорных обязательств. Строим точно в срок, без задержек.</p>
       </div>
       <div class="advantage-item">
-        <div class="advantage-icon-svg">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#2C4C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="20,2 6,28 34,28"/>
-            <rect x="18" y="28" width="4" height="10"/>
-          </svg>
-        </div>
+        <div class="advantage-num">04</div>
         <h3>Экологичные материалы</h3>
         <p>Используем только качественную древесину из проверенных регионов. Без химии и токсинов.</p>
       </div>
     </div>
   </section>
 
-  <section class="section" style="background:var(--white);">
-    <h2 class="section-title">Сертификаты</h2>
+  <section class="section section-white fade-in-up">
+    <h2 class="section-title fade-in-left">Сертификаты</h2>
     <p class="section-subtitle">Наши награды и сертификаты качества</p>
     <div class="cert-grid">
       <div class="cert-item">сертификат</div>
@@ -170,12 +234,12 @@
 </main>
 
 <footer class="footer">
-  <div class="footer-grid">
-    <div>
+  <div class="footer-inner">
+    <div class="footer-brand">
       <h3 data-company>Берлога</h3>
-      <p style="color:#B8CBB8;font-size:0.85rem;">Строим дома и бани из сосны и кедра по всей России. Под ключ, от проекта до ввода в эксплуатацию.</p>
+      <p>Строим дома и бани из сосны и кедра по всей России. Под ключ, от проекта до ввода в эксплуатацию.</p>
     </div>
-    <div>
+    <div class="footer-nav-col">
       <h3>Навигация</h3>
       <div class="footer-nav">
         <a href="projects.html">Проекты</a>
@@ -187,18 +251,21 @@
       </div>
     </div>
     <div class="footer-contacts">
-      <h3>Контакты</h3>
-      <p data-phone>+7 (999) 123-45-67</p>
-      <p data-email>info@berlogadom.ru</p>
-      <p data-address>г. Москва, ул. Лесная, д. 1</p>
-      <div style="display:flex;gap:8px;margin-top:12px;">
-        <a href="#" class="social-vk" style="color:#B8CBB8;">VK</a>
-        <a href="#" class="social-tg" style="color:#B8CBB8;">Telegram</a>
+      <h3>Свяжитесь с нами</h3>
+      <a href="tel:+79991234567" class="footer-phone" data-phone>+7 (999) 123-45-67</a>
+      <p class="footer-email" data-email>info@berlogadom.ru</p>
+      <p class="footer-address" data-address>г. Москва, ул. Лесная, д. 1</p>
+      <div class="footer-social">
+        <a href="#" class="social-vk">VK</a>
+        <a href="#" class="social-tg">Telegram</a>
       </div>
     </div>
   </div>
   <div class="footer-bottom">
-    © 2025 Берлога. Все права защищены. <a href="#" style="color:#6A8A78;text-decoration:underline;">Политика конфиденциальности</a>
+    <div class="footer-bottom-inner">
+      <span>© 2025 Берлога. Все права защищены.</span>
+      <a href="privacy.html" class="footer-privacy">Политика конфиденциальности</a>
+    </div>
   </div>
 </footer>
 

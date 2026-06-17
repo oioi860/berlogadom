@@ -1,34 +1,31 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Берлога — Дома и бани из сосны и кедра</title>
   <meta name="description" content="Строим дома и бани из сосны и кедра по всей России. Под ключ, от проекта до ввода в эксплуатацию.">
+  <link rel="icon" href="assets/images/favicon.png" type="image/png">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Monomakh&display=swap" rel="stylesheet">
+  <script>document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('img').forEach(function(i){i.setAttribute('draggable','false')})});document.addEventListener('contextmenu',function(e){if(e.target.closest('img,figure,picture,[class*="card-img"],[class*="slider"]')){e.preventDefault();e.stopPropagation();return false}},true);document.querySelectorAll('img,[class*="card-img"]').forEach(function(el){el.addEventListener('contextmenu',function(e){e.preventDefault();return false})});</script>
 </head>
 <body>
 
 <header class="header">
   <div class="header-inner">
-    <a href="index.html" class="logo">Берлога</a>
+    <a href="index.html" class="flex items-center">
+  <img src="assets/images/logo.png" alt="Берлога" class="h-20 w-auto">
+</a>
     <nav class="nav">
       <a href="projects.html">Проекты</a>
-      <div class="dropdown">
-        <a href="#">Услуги</a>
-        <div class="dropdown-menu">
-          <a href="service.html?id=doma">Строительство домов</a>
-          <a href="service.html?id=bani">Строительство бань</a>
-          <a href="service.html?id=proektirovanie">Проектирование</a>
-          <a href="service.html?id=dop-uslugi">Дополнительные услуги</a>
-        </div>
-      </div>
+      <a href="services.html">Услуги</a>
       <a href="about.html">О нас</a>
       <a href="contacts.html">Контакты</a>
       <div class="nav-right">
         <a href="tel:+79991234567" class="phone-link" data-phone>+7 (999) 123-45-67</a>
-        <a href="#calculator" class="btn btn-solid btn-sm">Рассчитать стоимость</a>
+        <a href="#calculator" class="btn btn-gold btn-sm">Рассчитать стоимость</a>
       </div>
     </nav>
     <button class="burger" aria-label="Меню">
@@ -39,91 +36,132 @@
 
 <main>
 
-<section class="hero">
-  <h1>Дома и бани из сосны и кедра по всей России</h1>
-  <p>Рубим срубы под ключ — от проекта до ввода в эксплуатацию</p>
-  <div class="hero-actions">
-    <a href="projects.html" class="btn btn-solid">Смотреть проекты</a>
-    <a href="#calculator" class="btn btn-outline">Рассчитать стоимость</a>
-  </div>
-</section>
-
-<section class="section">
-  <div class="advantages-grid">
-    <div class="advantage-item">
-      <div class="advantage-icon-svg">
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#2C4C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polygon points="20,2 6,28 34,28"/>
-          <rect x="18" y="28" width="4" height="10"/>
-        </svg>
-      </div>
-      <h3>Натуральное дерево</h3>
-      <p>Сосна и кедр высшего качества</p>
-    </div>
-    <div class="advantage-item">
-      <div class="advantage-icon-svg">
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#2C4C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polygon points="4,16 20,2 36,16"/>
-          <rect x="10" y="16" width="20" height="22"/>
-          <rect x="17" y="26" width="6" height="12"/>
-        </svg>
-      </div>
-      <h3>Индивидуальные проекты</h3>
-      <p>Разработка под ваши пожелания</p>
-    </div>
-    <div class="advantage-item">
-      <div class="advantage-icon-svg">
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#2C4C3B" stroke-width="2" stroke-linecap="round">
-          <line x1="8" y1="8" x2="32" y2="32"/>
-          <line x1="8" y1="32" x2="32" y2="8"/>
-          <circle cx="20" cy="20" r="15"/>
-        </svg>
-      </div>
-      <h3>Полный цикл работ</h3>
-      <p>От фундамента до отделки</p>
-    </div>
-    <div class="advantage-item">
-      <div class="advantage-icon-svg">
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#2C4C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="20" cy="20" r="15"/>
-          <polygon points="20,4 26,20 20,36 14,20"/>
-          <circle cx="20" cy="20" r="3"/>
-        </svg>
-      </div>
-      <h3>Работаем по всей России</h3>
-      <p>Доставка и строительство в любом регионе</p>
+<section class="hero hero-home fade-in-up">
+  <img src="assets/images/hero_bg.jpg" alt="Берлога" class="hero-image">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Дома и бани из сосны и кедра по всей России</h1>
+    <p>Рубим срубы под ключ — от проекта до ввода в эксплуатацию</p>
+    <div class="hero-actions">
+      <a href="projects.html" class="btn btn-outline">Смотреть проекты</a>
+      <a href="#calculator" class="btn btn-gold">Рассчитать стоимость</a>
     </div>
   </div>
 </section>
 
-<section class="craft-block">
-  <h2 class="section-title">Почему наши дома простоят веками</h2>
-  <p class="section-subtitle">Именно поэтому наши дома посоревнуются в долговечности со старинным деревянным зодчеством</p>
-  <div class="craft-grid">
-    <div class="craft-col wrong">
-      <div class="craft-icon">
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="#8B3A3A" stroke-width="2.5" stroke-linecap="round">
-          <line x1="4" y1="4" x2="24" y2="24"/>
-          <line x1="4" y1="24" x2="24" y2="4"/>
-        </svg>
-      </div>
-      <h3>Современные бензопилы и станки</h3>
-      <p>Оставляют на стыках брёвен открытые поры. В них накапливается конденсат, и дерево разрушается. Оцилиндрованное бревно теряет прочность за счёт снятых наружных слоёв.</p>
+<hr class="ornament">
+
+<section class="section section-white fade-in-up" style="padding-top:60px;padding-bottom:60px;">
+  <div class="about-premium">
+    <div class="about-premium-content">
+      <span class="about-premium-tag">Русское деревянное зодчество</span>
+      <h2>О компании</h2>
+      <p class="about-premium-text">C 2012 года создаём дома и бани ручной рубки из сосны и кедра. Каждый сруб — работа мастеров, каждый проект — уникален. Мы не используем станки — только традиционные инструменты и мастерство, переданное поколениями.</p>
+      <ul class="about-premium-list">
+        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13.5 4.5L6 12l-3.5-3.5"/></svg>Ручная рубка без станков</li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13.5 4.5L6 12l-3.5-3.5"/></svg>Только северный лес</li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13.5 4.5L6 12l-3.5-3.5"/></svg>Гарантия до 5 лет</li>
+      </ul>
+      <a href="about.html" class="btn btn-outline">Подробнее о компании</a>
     </div>
-    <div class="craft-col right">
-      <div class="craft-icon">
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="#1F3B2C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="4,14 12,22 24,6"/>
-        </svg>
+    <div class="about-premium-image">
+      <img src="assets/images/about_team.jpg" alt="Мастерская Берлога">
+      <div class="about-premium-badge">
+        <span class="about-premium-badge-year">12+</span>
+        <span class="about-premium-badge-label">лет мастерства</span>
       </div>
-      <h3>Традиционные инструменты</h3>
-      <p>Бережно оставляют поры закрытыми. Влаге негде накапливаться, и срок жизни дома увеличивается на десятки лет. При ручной рубке не нарушается структура древесины, и сруб выходит долговечнее.</p>
     </div>
   </div>
 </section>
 
-<section class="section" style="background:var(--white);">
-  <h2 class="section-title">Наши проекты</h2>
+<section class="section fade-in-up">
+  <div class="gold-divider"></div>
+  <h2 class="section-title fade-in-left">Почему ручная рубка?</h2>
+  <p class="section-subtitle">Шесть причин, по которым традиции побеждают технологии</p>
+  <p class="section-lead">Каждое бревно проходит через руки мастера. Мы не используем станки, не срезаем верхние слои и не нарушаем природную структуру древесины — мы создаём дома так, как это делали лучшие зодчие.</p>
+  <div class="artisan-grid">
+    <div class="artisan-item">
+      <div class="artisan-num">01</div>
+      <h3>Сохранность верхнего слоя</h3>
+      <p>При ручной рубке сохраняется плотный верхний слой древесины. Бревно не растрескивается и не впитывает влагу, а дом стоит на десятилетия дольше.</p>
+    </div>
+    <div class="artisan-item">
+      <div class="artisan-num">02</div>
+      <h3>Безупречная геометрия</h3>
+      <p>Качественная рубка исключает щели и зазоры. Каждое соединение подгоняется вручную — пазы и чашки ложатся идеально, без мостиков холода.</p>
+    </div>
+    <div class="artisan-item">
+      <div class="artisan-num">03</div>
+      <h3>Долговечность без химии</h3>
+      <p>Бревно ручной рубки служит в три раза дольше оцилиндрованного. Без пропиток и химической защиты — только сила природной структуры древесины.</p>
+    </div>
+    <div class="artisan-item">
+      <div class="artisan-num">04</div>
+      <h3>Прогнозируемая усадка</h3>
+      <p>Рубленый сруб даёт равномерную усадку без перекосов. Геометрия дома остаётся стабильной — двери не заклинивает, окна не перекашивает.</p>
+    </div>
+    <div class="artisan-item">
+      <div class="artisan-num">05</div>
+      <h3>Экономия на отделке</h3>
+      <p>Сруб ручной рубки не требует обшивки или штукатурки. Сама фактура бревна является финишной отделкой — это и есть премиальный интерьер.</p>
+    </div>
+    <div class="artisan-item">
+      <div class="artisan-num">06</div>
+      <h3>Энергоэффективность</h3>
+      <p>Плотные соединения и естественная структура дерева создают идеальный микроклимат. В рубленом доме теплее зимой и прохладнее летом без лишних затрат.</p>
+    </div>
+  </div>
+</section>
+
+<section class="craft-block fade-in-up">
+  <div class="gold-divider"></div>
+  <h2 class="section-title fade-in-left">Почему наши дома простоят веками</h2>
+  <p class="section-subtitle">Цифры, факты и традиции, доказавшие своё превосходство</p>
+  <div class="craft-stats">
+    <div class="craft-stat-item">
+      <div class="craft-stat-number">3×</div>
+      <div class="craft-stat-label">Дольше служит сруб ручной рубки</div>
+    </div>
+    <div class="craft-stat-item">
+      <div class="craft-stat-number">50+</div>
+      <div class="craft-stat-label">Лет гарантированного срока службы</div>
+    </div>
+    <div class="craft-stat-item">
+      <div class="craft-stat-number">100%</div>
+      <div class="craft-stat-label">Натуральная древесина без химии</div>
+    </div>
+  </div>
+  <div class="craft-comparison">
+    <div class="craft-compare-col wrong">
+      <div class="craft-compare-icon">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#C87777" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="16" cy="16" r="14"/>
+          <line x1="20" y1="12" x2="12" y2="20"/>
+          <line x1="12" y1="12" x2="20" y2="20"/>
+        </svg>
+      </div>
+      <div class="craft-compare-label">Современный подход</div>
+      <div class="craft-compare-title">Бензопилы, станки и оцилиндровка</div>
+      <p>Станки срезают защитный верхний слой бревна, открывая поры древесины. В них накапливается влага — запускается процесс гниения. Оцилиндрованное бревно теряет до 40% природной прочности. Срок службы такого дома редко превышает 30–40 лет.</p>
+    </div>
+    <div class="craft-compare-col right">
+      <div class="craft-compare-icon">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#CFA159" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="16" cy="16" r="14"/>
+          <path d="M22 12L14 20l-4-4"/>
+        </svg>
+      </div>
+      <div class="craft-compare-label">Ручная рубка</div>
+      <div class="craft-compare-title">Топор, скобель и мастерство поколений</div>
+      <p>Ручной инструмент бережно сохраняет верхний плотный слой — природную защиту бревна. Поры остаются закрытыми, влага не проникает внутрь. Структура древесины не нарушена, а срок службы такого сруба превышает 100 лет. Дом переживёт ваших внуков.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="ornament">
+
+<section class="section section-white fade-in-up">
+  <h2 class="section-title fade-in-left">Наши проекты</h2>
   <p class="section-subtitle">Реализованные объекты, которыми мы гордимся</p>
   <div class="card-grid" id="index-projects-grid"></div>
   <div style="text-align:center;margin-top:32px;">
@@ -131,14 +169,16 @@
   </div>
 </section>
 
-<section class="section">
-  <h2 class="section-title">Что мы строим</h2>
+<section class="section fade-in-up">
+  <h2 class="section-title fade-in-left">Что мы строим</h2>
   <p class="section-subtitle">Полный спектр услуг по деревянному домостроению</p>
   <div class="card-grid" id="index-services-grid"></div>
 </section>
 
-<section class="section" id="calculator" style="background:var(--white);">
-  <h2 class="section-title">Рассчитайте стоимость вашего дома или бани за 1 минуту</h2>
+<hr class="ornament">
+
+<section class="section section-white fade-in-up" id="calculator">
+  <h2 class="section-title fade-in-left">Рассчитайте стоимость вашего дома или бани за 1 минуту</h2>
   <p class="section-subtitle">Укажите тип и площадь, и мы покажем ориентировочную стоимость</p>
   <div class="calculator">
     <form id="calc-form">
@@ -152,75 +192,51 @@
         <label for="calc-area">Площадь, м²</label>
         <input type="number" id="calc-area" placeholder="Введите площадь" min="1">
       </div>
-      <button type="submit" class="btn btn-solid calc-btn" style="width:100%;">Рассчитать</button>
+      <button type="submit" class="btn btn-gold calc-btn" style="width:100%;">Рассчитать</button>
       <div id="calc-error" class="calc-error"></div>
       <div id="calc-result" class="calc-result" style="display:none;">
-        <p style="margin-bottom:4px;font-size:0.9rem;color:var(--gray);">Ориентировочная стоимость:</p>
+        <p style="margin-bottom:4px;font-size:0.9rem;color:var(--text-secondary);">Ориентировочная стоимость:</p>
         <div class="price" id="calc-price">0 ₽</div>
-        <a href="contacts.html" class="btn btn-outline" style="margin-top:16px;">Оставить заявку на точный расчёт</a>
+        <a href="#feedback" class="btn btn-outline" style="margin-top:16px;">Оставить заявку на точный расчёт</a>
       </div>
     </form>
   </div>
 </section>
 
-<section class="quote-block">
-  <blockquote><span class="quote-mark">«</span> Сладость низкой цены уходит тогда, когда приходит горечь низкого качества <span class="quote-mark">»</span></blockquote>
+<section class="quote-block fade-in">
+  <blockquote><span class="quote-mark">«</span> Сладость <span class="quote-highlight">низкой цены</span> уходит тогда, когда приходит <span class="quote-highlight">горечь низкого качества</span> <span class="quote-mark">»</span></blockquote>
   <cite>— Берлога, строим на совесть</cite>
 </section>
 
-<section class="section">
-  <h2 class="section-title">Почему выбирают нас</h2>
+<section class="section fade-in-up">
+  <h2 class="section-title fade-in-left">Почему выбирают нас</h2>
   <p class="section-subtitle">Надёжность и качество, проверенные временем</p>
   <div class="advantages-grid">
     <div class="advantage-item">
-      <div class="advantage-icon-svg">
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#2C4C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="20" cy="20" r="16"/>
-          <polygon points="20,6 24,14 34,14 26,20 30,30 20,24 10,30 14,20 6,14 16,14"/>
-        </svg>
-      </div>
+      <div class="advantage-num">01</div>
       <h3>Опыт &gt;10 лет</h3>
       <p>Более 100 построенных объектов</p>
     </div>
     <div class="advantage-item">
-      <div class="advantage-icon-svg">
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#2C4C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="8" y="14" width="24" height="22" rx="2"/>
-          <polyline points="6,18 20,8 34,18"/>
-          <circle cx="20" cy="28" r="4"/>
-        </svg>
-      </div>
+      <div class="advantage-num">02</div>
       <h3>Гарантия на все работы</h3>
       <p>Даём письменную гарантию до 5 лет</p>
     </div>
     <div class="advantage-item">
-      <div class="advantage-icon-svg">
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#2C4C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="6" y="6" width="28" height="28" rx="2"/>
-          <line x1="6" y1="16" x2="34" y2="16"/>
-          <line x1="20" y1="6" x2="20" y2="34"/>
-          <line x1="13" y1="10" x2="13" y2="14"/>
-          <line x1="27" y1="10" x2="27" y2="14"/>
-        </svg>
-      </div>
+      <div class="advantage-num">03</div>
       <h3>Соблюдение сроков</h3>
       <p>Чёткое выполнение договорённостей</p>
     </div>
     <div class="advantage-item">
-      <div class="advantage-icon-svg">
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#2C4C3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M20,4 C20,4 8,16 8,24 C8,30.6 13.4,36 20,36 C26.6,36 32,30.6 32,24 C32,16 20,4 20,4Z"/>
-          <circle cx="20" cy="24" r="4"/>
-        </svg>
-      </div>
+      <div class="advantage-num">04</div>
       <h3>Экологичные материалы</h3>
       <p>Только качественная древесина</p>
     </div>
   </div>
 </section>
 
-<section class="section" style="background:var(--white);">
-  <h2 class="section-title">Свяжитесь с нами</h2>
+<section class="section section-white fade-in-up">
+  <h2 class="section-title fade-in-left">Свяжитесь с нами</h2>
   <p class="section-subtitle">Ответим на все вопросы и поможем с выбором</p>
   <div class="contacts-grid">
     <div class="contact-info">
@@ -233,7 +249,7 @@
       </div>
     </div>
     <div>
-      <form>
+      <form id="feedback">
         <div class="form-group">
           <label for="contact-name">Имя</label>
           <input type="text" id="contact-name" placeholder="Ваше имя">
@@ -246,6 +262,10 @@
           <label for="contact-msg">Сообщение</label>
           <textarea id="contact-msg" placeholder="Ваше сообщение"></textarea>
         </div>
+        <div class="form-checkbox">
+          <input type="checkbox" id="privacy-feedback" name="privacy" required>
+          <label for="privacy-feedback">Я согласен на обработку персональных данных в соответствии с <a href="privacy.html" target="_blank">Политикой конфиденциальности</a></label>
+        </div>
         <button type="submit" class="btn btn-solid" style="width:100%;">Отправить</button>
       </form>
     </div>
@@ -255,12 +275,12 @@
 </main>
 
 <footer class="footer">
-  <div class="footer-grid">
-    <div>
+  <div class="footer-inner">
+    <div class="footer-brand">
       <h3 data-company>Берлога</h3>
-      <p style="color:#B8CBB8;font-size:0.85rem;">Строим дома и бани из сосны и кедра по всей России. Под ключ, от проекта до ввода в эксплуатацию.</p>
+      <p>Строим дома и бани из сосны и кедра по всей России. Под ключ, от проекта до ввода в эксплуатацию.</p>
     </div>
-    <div>
+    <div class="footer-nav-col">
       <h3>Навигация</h3>
       <div class="footer-nav">
         <a href="projects.html">Проекты</a>
@@ -272,18 +292,21 @@
       </div>
     </div>
     <div class="footer-contacts">
-      <h3>Контакты</h3>
-      <p data-phone>+7 (999) 123-45-67</p>
-      <p data-email>info@berlogadom.ru</p>
-      <p data-address>г. Москва, ул. Лесная, д. 1</p>
-      <div style="display:flex;gap:8px;margin-top:12px;">
-        <a href="#" class="social-vk" style="color:#B8CBB8;">VK</a>
-        <a href="#" class="social-tg" style="color:#B8CBB8;">Telegram</a>
+      <h3>Свяжитесь с нами</h3>
+      <a href="tel:+79991234567" class="footer-phone" data-phone>+7 (999) 123-45-67</a>
+      <p class="footer-email" data-email>info@berlogadom.ru</p>
+      <p class="footer-address" data-address>г. Москва, ул. Лесная, д. 1</p>
+      <div class="footer-social">
+        <a href="#" class="social-vk">VK</a>
+        <a href="#" class="social-tg">Telegram</a>
       </div>
     </div>
   </div>
   <div class="footer-bottom">
-    © 2025 Берлога. Все права защищены. <a href="#" style="color:#6A8A78;text-decoration:underline;">Политика конфиденциальности</a>
+    <div class="footer-bottom-inner">
+      <span>© 2025 Берлога. Все права защищены.</span>
+      <a href="privacy.html" class="footer-privacy">Политика конфиденциальности</a>
+    </div>
   </div>
 </footer>
 
@@ -297,6 +320,7 @@ document.addEventListener('DOMContentLoaded', function () {
     items.forEach(function (p) {
       grid.appendChild(createProjectCard(p));
     });
+    initScrollAnimation();
   });
 
   fetchJSON('data/services.json').then(function (services) {
@@ -340,6 +364,7 @@ document.addEventListener('DOMContentLoaded', function () {
       card.appendChild(body);
       grid.appendChild(card);
     });
+    initScrollAnimation();
   });
 });
 </script>

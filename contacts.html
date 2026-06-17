@@ -1,34 +1,31 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Контакты | Берлога</title>
   <meta name="description" content="Контакты строительной компании Берлога">
+  <link rel="icon" href="assets/images/favicon.png" type="image/png">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Monomakh&display=swap" rel="stylesheet">
+  <script>document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('img').forEach(function(i){i.setAttribute('draggable','false')})});document.addEventListener('contextmenu',function(e){if(e.target.closest('img,figure,picture,[class*="card-img"],[class*="slider"]')){e.preventDefault();e.stopPropagation();return false}},true);document.querySelectorAll('img,[class*="card-img"]').forEach(function(el){el.addEventListener('contextmenu',function(e){e.preventDefault();return false})});</script>
 </head>
 <body>
 
 <header class="header">
   <div class="header-inner">
-    <a href="index.html" class="logo">Берлога</a>
+    <a href="index.html" class="flex items-center">
+  <img src="assets/images/logo.png" alt="Берлога" class="h-20 w-auto">
+</a>
     <nav class="nav">
       <a href="projects.html">Проекты</a>
-      <div class="dropdown">
-        <a href="#">Услуги</a>
-        <div class="dropdown-menu">
-          <a href="service.html?id=doma">Строительство домов</a>
-          <a href="service.html?id=bani">Строительство бань</a>
-          <a href="service.html?id=proektirovanie">Проектирование</a>
-          <a href="service.html?id=dop-uslugi">Дополнительные услуги</a>
-        </div>
-      </div>
+      <a href="services.html">Услуги</a>
       <a href="about.html">О нас</a>
       <a href="contacts.html">Контакты</a>
       <div class="nav-right">
         <a href="tel:+79991234567" class="phone-link" data-phone>+7 (999) 123-45-67</a>
-        <a href="index.html#calculator" class="btn btn-solid btn-sm">Рассчитать стоимость</a>
+        <a href="index.html#calculator" class="btn btn-gold btn-sm">Рассчитать стоимость</a>
       </div>
     </nav>
     <button class="burger" aria-label="Меню">
@@ -38,20 +35,36 @@
 </header>
 
 <main>
-  <section class="hero">
-    <h1>Контакты</h1>
-    <p>Свяжитесь с нами любым удобным способом</p>
+  <section class="hero-sub fade-in-up">
+    <div class="hero-sub-bg">
+      <img src="assets/images/hero_bg.jpg" alt="Берлога">
+    </div>
+    <div class="hero-sub-overlay"></div>
+    <div class="hero-sub-content">
+      <div class="hero-sub-label">Личное сопровождение</div>
+      <h1>Приглашаем к диалогу</h1>
+      <div class="hero-sub-divider"></div>
+      <p>Расскажите о вашем проекте — и мы предложим решение, которое превзойдёт ожидания. Каждый клиент получает персонального архитектора и полное сопровождение на всех этапах.</p>
+      <div class="hero-sub-stats">
+        <div>
+          <div class="hero-sub-stat-number" data-phone>+7 (999) 123-45-67</div>
+          <div class="hero-sub-stat-label">Прямая линия с основателем</div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="section">
-    <div class="map-placeholder">Карта</div>
+  <hr class="ornament">
+
+  <section class="section fade-in-up">
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A82f3ccfe086ea8498c2e969f47b12df4b76269d3cd45b3da970dbad2a62b3a28&amp;source=constructor" width="100%" height="400" style="border:0;border-radius:8px;" allowfullscreen loading="lazy"></iframe>
   </section>
 
-  <section class="section" style="padding-top:0;">
+  <section class="section fade-in-up" style="padding-top:0;">
     <div class="contacts-grid">
       <div class="contact-info">
-        <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:20px;letter-spacing:0.04em;">Наши контакты</h2>
-        <p><strong>Адрес:</strong> <span data-address>г. Москва, ул. Лесная, д. 1</span></p>
+        <h2 class="fade-in-left" style="font-size:1.5rem;font-weight:700;margin-bottom:20px;letter-spacing:0.04em;">Наши контакты</h2>
+        <p><strong>Адрес:</strong> <span data-address>г. Брянск, ул. Красноармейская, д. 136-а</span></p>
         <p><strong>Телефон:</strong> <a href="tel:+79991234567" data-phone>+7 (999) 123-45-67</a></p>
         <p><strong>Email:</strong> <a href="mailto:info@berlogadom.ru" data-email>info@berlogadom.ru</a></p>
         <p><strong>Режим работы:</strong> Пн–Пт: 9:00 – 19:00, Сб: 10:00 – 16:00</p>
@@ -61,7 +74,7 @@
         </div>
       </div>
       <div>
-        <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:20px;letter-spacing:0.04em;">Обратная связь</h2>
+        <h2 class="fade-in-left" style="font-size:1.5rem;font-weight:700;margin-bottom:20px;letter-spacing:0.04em;">Обратная связь</h2>
         <form>
           <div class="form-group">
             <label for="contact-name">Имя</label>
@@ -75,6 +88,10 @@
             <label for="contact-msg">Сообщение</label>
             <textarea id="contact-msg" placeholder="Ваше сообщение"></textarea>
           </div>
+          <div class="form-checkbox">
+            <input type="checkbox" id="privacy-contact" name="privacy" required>
+            <label for="privacy-contact">Я согласен на обработку персональных данных в соответствии с <a href="privacy.html" target="_blank">Политикой конфиденциальности</a></label>
+          </div>
           <button type="submit" class="btn btn-solid" style="width:100%;">Отправить</button>
         </form>
       </div>
@@ -83,12 +100,12 @@
 </main>
 
 <footer class="footer">
-  <div class="footer-grid">
-    <div>
+  <div class="footer-inner">
+    <div class="footer-brand">
       <h3 data-company>Берлога</h3>
-      <p style="color:#B8CBB8;font-size:0.85rem;">Строим дома и бани из сосны и кедра по всей России. Под ключ, от проекта до ввода в эксплуатацию.</p>
+      <p>Строим дома и бани из сосны и кедра по всей России. Под ключ, от проекта до ввода в эксплуатацию.</p>
     </div>
-    <div>
+    <div class="footer-nav-col">
       <h3>Навигация</h3>
       <div class="footer-nav">
         <a href="projects.html">Проекты</a>
@@ -100,18 +117,21 @@
       </div>
     </div>
     <div class="footer-contacts">
-      <h3>Контакты</h3>
-      <p data-phone>+7 (999) 123-45-67</p>
-      <p data-email>info@berlogadom.ru</p>
-      <p data-address>г. Москва, ул. Лесная, д. 1</p>
-      <div style="display:flex;gap:8px;margin-top:12px;">
-        <a href="#" class="social-vk" style="color:#B8CBB8;">VK</a>
-        <a href="#" class="social-tg" style="color:#B8CBB8;">Telegram</a>
+      <h3>Свяжитесь с нами</h3>
+      <a href="tel:+79991234567" class="footer-phone" data-phone>+7 (999) 123-45-67</a>
+      <p class="footer-email" data-email>info@berlogadom.ru</p>
+      <p class="footer-address" data-address>г. Москва, ул. Лесная, д. 1</p>
+      <div class="footer-social">
+        <a href="#" class="social-vk">VK</a>
+        <a href="#" class="social-tg">Telegram</a>
       </div>
     </div>
   </div>
   <div class="footer-bottom">
-    © 2025 Берлога. Все права защищены. <a href="#" style="color:#6A8A78;text-decoration:underline;">Политика конфиденциальности</a>
+    <div class="footer-bottom-inner">
+      <span>© 2025 Берлога. Все права защищены.</span>
+      <a href="privacy.html" class="footer-privacy">Политика конфиденциальности</a>
+    </div>
   </div>
 </footer>
 
