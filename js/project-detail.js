@@ -72,6 +72,7 @@ function renderProject(project, allProjects) {
     similar.forEach(function (p) {
       similarGrid.appendChild(createProjectCard(p));
     });
+    initScrollAnimation();
   } else {
     similarSection.style.display = 'none';
   }

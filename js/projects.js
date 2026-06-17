@@ -66,6 +66,7 @@ function renderPage() {
   pageItems.forEach(function (p) {
     grid.appendChild(createProjectCard(p));
   });
+  initScrollAnimation();
 
   pagination.innerHTML = '';
   for (var i = 1; i <= totalPages; i++) {

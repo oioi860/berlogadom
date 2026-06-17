@@ -26,11 +26,51 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   fetchSettings();
+  initScrollAnimation();
 
   if (document.getElementById('calc-form') && typeof initCalculator === 'function') {
     initCalculator();
   }
 });
+
+var animationObserver = null;
+
+function initScrollAnimation() {
+  var els = document.querySelectorAll('.fade-in, .fade-in-up, .fade-in-left, .fade-in-right');
+  if (!els.length) return;
+  if ('IntersectionObserver' in window) {
+    if (!animationObserver) {
+      animationObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            animationObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+    }
+    els.forEach(function (el) {
+      if (!el.classList.contains('visible')) {
+        animationObserver.observe(el);
+      }
+    });
+  } else {
+    els.forEach(function (el) { el.classList.add('visible'); });
+  }
+}
+
+function observeAnimationEl(el) {
+  if (!el || el.classList.contains('visible')) return;
+  if ('IntersectionObserver' in window) {
+    if (!animationObserver) {
+      initScrollAnimation();
+      return;
+    }
+    animationObserver.observe(el);
+  } else {
+    el.classList.add('visible');
+  }
+}
 
 function fetchSettings() {
   fetch('data/settings.json')
@@ -67,7 +107,7 @@ function fetchJSON(url) {
 function createProjectCard(p) {
   var card = document.createElement('a');
   card.href = 'project-detail.html?id=' + p.id;
-  card.className = 'card';
+  card.className = 'card fade-in-up';
   card.style.display = 'block';
   card.style.textDecoration = 'none';
   card.style.color = 'inherit';
