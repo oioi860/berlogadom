@@ -8,7 +8,7 @@
   <link rel="icon" href="assets/images/favicon.png" type="image/png">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Monomakh&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
   <script>document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('img').forEach(function(i){i.setAttribute('draggable','false')})});document.addEventListener('contextmenu',function(e){if(e.target.closest('img,figure,picture,[class*="card-img"],[class*="slider"]')){e.preventDefault();e.stopPropagation();return false}},true);document.querySelectorAll('img,[class*="card-img"]').forEach(function(el){el.addEventListener('contextmenu',function(e){e.preventDefault();return false})});</script>
 </head>
 <body>
@@ -22,6 +22,7 @@
       <a href="projects.html">Проекты</a>
       <a href="services.html">Услуги</a>
       <a href="about.html">О нас</a>
+      <a href="about.html#process">Процесс</a>
       <a href="contacts.html">Контакты</a>
       <div class="nav-right">
         <a href="tel:+79991234567" class="phone-link" data-phone>+7 (999) 123-45-67</a>
@@ -125,6 +126,38 @@
           <p>Отделка, кровля, инженерные системы. Сдаём объект под ключ с письменной гарантией до 5 лет на все виды работ.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section id="process" class="section-process fade-in-up">
+    <div style="max-width:1200px;margin:0 auto;padding:0 20px;">
+      <div class="about-section-tag" style="text-align:center;">Процесс</div>
+      <h2>Как мы строим</h2>
+      <p class="process-description">
+        Мы строим дома и бани из бревна ручной рубки. Каждый этап — от фундамента до кровли — выполняется с высочайшим качеством и вниманием к деталям. Ниже вы можете увидеть, как проходит строительство.
+      </p>
+
+      <div class="process-steps">
+        <div class="step">
+          <h3>1. Фундамент</h3>
+          <p>Закладка надёжного основания для вашего будущего дома.</p>
+        </div>
+        <div class="step">
+          <h3>2. Рубка сруба</h3>
+          <p>Ручная рубка бревна по традиционным технологиям (Русская, Канадская, Норвежская).</p>
+        </div>
+        <div class="step">
+          <h3>3. Установка кровли</h3>
+          <p>Монтаж стропильной системы и кровельного покрытия.</p>
+        </div>
+        <div class="step">
+          <h3>4. Отделка и утепление</h3>
+          <p>Финишные работы — шлифовка, пропитка, внутренняя отделка.</p>
+        </div>
+      </div>
+
+      <h3 style="font-family:'Forum',serif;font-size:1.5rem;margin-bottom:8px;">Фото строительства</h3>
+      <div class="process-gallery" id="process-gallery"></div>
     </div>
   </section>
 
@@ -247,6 +280,7 @@
         <a href="service.html?id=bani">Строительство бань</a>
         <a href="service.html?id=proektirovanie">Проектирование</a>
         <a href="about.html">О нас</a>
+        <a href="about.html#process">Процесс</a>
         <a href="contacts.html">Контакты</a>
       </div>
     </div>
@@ -270,5 +304,40 @@
 </footer>
 
 <script src="js/common.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var gallery = document.getElementById('process-gallery');
+  if (!gallery) return;
+
+  var totalPhotos = 19;
+  var basePath = 'assets/cases/';
+  var captions = [
+    'Фундамент', 'Подготовка бревна', 'Рубка сруба', 'Рубка чаш',
+    'Установка венцов', 'Проверка уровня', 'Монтаж стропил', 'Установка кровли',
+    'Кровельные работы', 'Утепление стен', 'Шлифовка бревна', 'Обработка антисептиком',
+    'Внутренняя отделка', 'Установка окон', 'Отделка террасы', 'Финишные работы',
+    'Готовая баня', 'Готовый дом', 'Готовый дом с террасой'
+  ];
+
+  for (var i = 1; i <= totalPhotos; i++) {
+    var wrapper = document.createElement('div');
+    wrapper.className = 'gallery-item';
+
+    var img = document.createElement('img');
+    img.src = basePath + i + '.webp';
+    img.alt = captions[i - 1] || 'Фото ' + i;
+    img.loading = 'lazy';
+    img.className = 'gallery-image';
+
+    var caption = document.createElement('p');
+    caption.className = 'gallery-caption';
+    caption.textContent = captions[i - 1] || 'Фото ' + i;
+
+    wrapper.appendChild(img);
+    wrapper.appendChild(caption);
+    gallery.appendChild(wrapper);
+  }
+});
+</script>
 </body>
 </html>
